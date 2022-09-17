@@ -1,0 +1,333 @@
+/*1ra parte del cuerpo de la página*/ 
+body {
+  font-family: 'Noto Sans JP', sans-serif;	
+  background: #f2f2f2;
+}
+
+.contenedorX{
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+  height: 80px;
+  position: sticky;
+  align-items: center;
+  top: 0;
+  z-index: 60;
+  justify-content: space-evenly;
+}
+.logo{
+  width: 200px;
+  height: 100%;
+}
+
+
+
+
+
+
+.contenedorLinks {
+	display: flex;
+	justify-content:end;
+  margin-left:150px;
+}
+.contenedorLinks li{
+  list-style: none;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.contenedorLinks a {
+  color: #1db9b4;
+  text-decoration: none;
+  position: relative;
+}
+.contenedorLinks a::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom:0;
+  left:0;
+  background-color:#ff5d5d;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition:transform 0.5s ease-out;
+}
+.contenedorLinks a:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/*Aside*/
+
+aside {
+  width: 15%;
+  min-width: 100px;
+  height: 40%;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 5px;
+  position: fixed;
+  top: 20%;
+  left:7%;
+  z-index: 50;
+  line-height:1.5
+}
+
+aside .titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 24px;
+  margin-bottom: 20px;
+
+  text-align: center;
+  color: #ff5d5d;
+}
+
+aside .indice a {
+  display: block;
+  margin-bottom: 10px;
+  color:#B5B5B5
+}
+aside .indice a:hover {
+  text-decoration: underline;
+}
+
+/*Psicologos*/
+.contendorSupremo{
+  width: 60%;
+  margin: 50px 30%;
+  display: grid;
+  grid-template-columns: 48% 48%;
+  justify-content:space-between;
+}
+.psicologo{ 
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  margin: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  
+}
+.nombrePsicologo{
+  font-family: 'Poppins', sans-serif;
+  margin-left: 5%;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.nombrePsicologo a{
+  color:#1db9b4;
+}
+.informacion{
+  margin-left: 5%;
+  font-family: 'Poppins',Helvetica,sans-serif;
+  font-weight: bolder;
+  width: 80%;
+  font-size: 15px;
+  line-height:1;
+}
+.creditos{
+  font-size: 12px;
+  font-weight: bolder;
+  margin-left:5%;
+  font-family: 'Poppins',Helvetica,sans-serif;
+}
+.contacto{
+  font-family: 'roboto',sans-serif;
+  margin-left:5%;
+  font-size: 15px;
+  padding: 15px 0 20px 0;
+  margin-top:5px;
+  width: 83%;
+  border-top: 1px solid;
+}
+.contacto a{
+  color:#1db9b4;
+}
+.nombrePsicologo a:hover ,.contacto a:hover{
+  color:#ff5d5d;
+  transition: 0.3s;
+}
+
+/*Pie de Pagina*/
+.ubicacion{
+  width:120px;
+  height:120px;
+  transform:translate(-10px)
+}
+footer{
+    width: 100%;
+    background: #202020;
+    color: white;   
+    
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1{
+    max-width: 400px;
+}
+
+.colum1 h1{
+    font-size: 22px;
+}
+
+.colum1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+
+.colum2{
+    max-width: 400px;
+    
+}
+
+.colum2 h1{
+    font-size: 22px;
+}
+
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 36px;
+    height: 36px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.colum3{
+    max-width: 400px;
+}
+
+.colum3 h1{
+    font-size: 22px;
+}
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer{
+    width: 100%;  
+    background: #101010;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+
+@media screen and (max-width: 1400px){
+  .nombrePsicologo{
+    font-family: 'Poppins', sans-serif;
+    margin-left: 5%;
+    font-size: 14px;
+    font-weight: bolder;
+  }
+  .nombrePsicologo a{
+    color:#1db9b4;
+  }
+  .informacion{
+    margin-left: 5%;
+    font-family: 'Poppins',Helvetica,sans-serif;
+    font-weight: bolder;
+    width: 80%;
+    font-size: 13px;
+    line-height:1;
+  }
+  .creditos{
+    font-size: 10px;
+    font-weight: bolder;
+    margin-left:5%;
+    font-family: 'Poppins',Helvetica,sans-serif;
+  }
+  .contacto{
+    font-family: 'roboto',sans-serif;
+    margin-left:5%;
+    font-size: 13px;
+    padding: 15px 0 20px 0;
+    margin-top:5px;
+    width: 83%;
+    border-top: 1px solid;
+  }
+  aside {
+    width: 15%;
+    min-width: 100px;
+    height: 40%;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 5px;
+    position: fixed;
+    top: 20%;
+    left:7%;
+    z-index: 50;
+    line-height:1.5
+  }
+  
+  aside .titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 20px;
+  
+    text-align: center;
+    color: #ff5d5d;
+  }
+  
+  aside .indice a {
+    display: block;
+    margin-bottom: 10px;
+    color:#B5B5B5;
+    font-size: 12px;
+  }
+  
+}

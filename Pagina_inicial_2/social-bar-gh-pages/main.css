@@ -1,0 +1,57 @@
+html {
+	font-size: 16px;
+}
+a{
+	text-decoration: none;
+}
+
+.social-bar {
+	position: fixed;
+	right: 0;
+	top: 35%;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	z-index: 100;
+}
+
+.icon {
+	color: white;
+	text-decoration: none;
+	padding: .8rem ;
+	display: flex;
+	transition: all .5s;
+	text-decoration: none;
+}
+
+.icon-facebook {
+	background: rgba(29, 185, 180);
+}
+
+.icon-twitter {
+	background: rgba(19, 175, 170);
+}
+
+.icon-youtube {
+	background: rgba(9, 165, 160);
+}
+
+.icon-instagram {
+	background: rgba(0, 155, 150);
+}
+
+.icon:first-child {
+	border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child {
+	border-radius: 0 0 0 1rem;
+}
+
+.icon:hover {
+	padding-right: 3rem;
+	border-radius: 1rem 0 0 1rem;
+	box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+	text-decoration: none;
+}

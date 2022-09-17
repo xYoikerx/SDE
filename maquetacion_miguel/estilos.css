@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html{
+      height: 100%;
+  }
+  body{
+    font-family:"Public Sans", sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+  }
+  .contenedorX{
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    height: 80px;
+    position: sticky;
+    align-items: center;
+    top: 0;
+    z-index: 60;
+    justify-content: space-between;
+}
+.contenedorImg{
+    width: 30%;
+    height: 100%;
+    background-color: #fff;
+}
+.contenedorImg img{
+    width: 200px;
+    height: 100%;
+    margin-left: 200px;
+}
+
+
+
+
+
+
+.contenedorLinks {
+	display: flex;
+	justify-content:end;
+    margin-left:150px;
+}
+.contenedorLinks li{
+    list-style: none;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.contenedorLinks a {
+    color: #1db9b4;
+    text-decoration: none;
+    position: relative;
+}
+.contenedorLinks a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom:0;
+    left:0;
+    background-color:#ff5d5d;
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    transition:transform 0.5s ease-out;
+}
+.contenedorLinks a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom right;
+}
+
+  .grid-container>*{
+    box-shadow:-1px 1px 7px 0px rgba(0, 0, 0, 75);
+    border-radius: 4px;
+    padding:10px;
+    text-align:center;
+  }
+  .Horariosdeatencion{
+      grid-area: Horariosdeatencion;
+      background-color:#85aedd;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      min-width: 300px;
+  }
+  .navbar{
+    grid-area: navbar;
+    background-color:#afd6af;
+    display: flex;
+      justify-content:left;
+      align-items: center;
+}
+.main{
+    grid-area: main;
+    background-color:#fdcfcf;
+    display: flex;
+      justify-content:left;
+      align-items: center;
+}
+.sidebar{
+    grid-area:sidebar;
+    background-color:#f5f5f5;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+  }
+.comentario{
+    grid-area:comentario;
+    background-color:#8c96a0;
+  
+}
+  .grid-container{
+      display:grid;
+      gap:10px;
+      grid-template-areas:
+        "header"
+        "navbar"
+        "main"
+        "sidebar"
+        "footer";
+  }
+  @media screen and (max-width: 600px){
+    .grid-container{
+       background-color: #00c0c7;
+    }
+  
+  }
+  @media screen and (min-width: 600px){
+    .grid-container{
+        grid-template-rows: auto;
+        grid-template-columns: 40% 59%;
+        grid-template-areas: 
+        "Horariosdeatencion navbar"
+        "Horariosdeatencion sidebar"
+        "Horariosdeatencion  main"
+        "comentario comentario"
+        ;
+    }
+  }
+.hora1{
+    grid-area: hora1;
+    background-color:#B56C00;
+
+}
+.hora2{
+  grid-area: hora2;
+  background-color:#ffe926;
+
+}
+.hora3{
+  grid-area: hora3;
+  background-color:#00c0c7;
+  
+}
+.cuadrohorarios h1{
+  grid-area: h1;
+}
+.circulo{
+  border:#00c0c7 groove 8px;
+  background-color: #E2B573;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  }
+.cuadro1{
+  border:#00c0c7 groove 8px;
+  display: flex;
+  justify-content:left;
+  align-items: center;
+  margin-left: 50px; 
+  padding-right: 700px;
+}
+.cuadrohorarios{
+  border:#e103f5f3 groove 10px;
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  grid-template-rows: auto;
+  gap:5px;
+  grid-template-areas: 
+        "h1 h1 h1"
+        "hora1 hora2 hora3"
+        
+        ;
+}
+.cuadrohorarios div{
+  text-align: center;
+  color: #000000f3;
+  padding: 50px;
+  padding-bottom: 180px;
+}
