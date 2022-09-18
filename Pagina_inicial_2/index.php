@@ -20,7 +20,7 @@
 			<img src="../Pagina_inicial_2/imagenes/logo.png" alt="">
 		</div>
 			<ul class="contenedorLinks">
-				<li class="link"><a href="E:\Formularios-main-main\Formulario de Comentarios\index.html">Seccion de preguntas</a></li>  
+				<li class="link"><a href="http://localhost/SDE/seccionComentarios/consultaComentario.php">Seccion de preguntas</a></li>  
 				<li class="link"><a href="#">Sobre Nosotros</a></li>  
 				<li class="link"><a href="#">Miembros</a></li>
 				<li class="link"><a href="C:/xampp/htdocs/Proyecto final con php/Formulario-de-Registro/index.html">Registro</a></li>     
@@ -231,7 +231,7 @@
  
                  <div class="colum1">
                      <h1 >Comentario</h1>
-					 <form id="form" class="form-com" action="archivo.php" method="post">
+					 <form id="form" class="form-com" action="../seccionComentarios/archivo.php" method="post">
 						<input id="usuariocom" class="controls" type="text" name="correoElectronico" value="" placeholder="Usuario">
 						<br>
 						<textarea id="comentario" class="controls" type="text" name="comentario" value="" placeholder="Comentario"></textarea>	
@@ -288,5 +288,6 @@
 
 	<script src="../Pagina_inicial_2/js/carrucel.js"></script>
 	<script src="../Pagina_inicial_2/js/responsive.js"></script>
+	<script src="../seccionComentarios/js/validacion.js"></script>
 </body>
 </html>
