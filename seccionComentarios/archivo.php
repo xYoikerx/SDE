@@ -14,7 +14,7 @@
             $comentario
         </article>
     </div>
-</div>"); //div contenedor
+</div>".PHP_EOL); //div contenedor
     header("Location:../seccionComentarios/consultaComentario.php".PHP_EOL);
 ?>
 

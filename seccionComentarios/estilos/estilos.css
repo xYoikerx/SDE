@@ -13,7 +13,7 @@ body {
     position: sticky;
     align-items: center;
     top: 0;
-    z-index: 60;
+    z-index: 500;
     justify-content: space-between;
 }
 .contenedorImg{
@@ -89,6 +89,8 @@ body {
 /*footer*/
 
 .form-com {
+    position: relative;
+    z-index: 80;
     width: 450px;
     height: 240px;
     background: #797979;
@@ -139,7 +141,8 @@ body {
 footer{
     width: 100%;
     background: rgba(51,51,51);
-    color: white;        
+    color: white; 
+    display:inherit;      
 }
 .ubicacion{
     height:250px;

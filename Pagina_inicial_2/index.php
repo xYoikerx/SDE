@@ -21,12 +21,14 @@
 		</div>
 			<ul class="contenedorLinks">
 				<li class="link"><a href="http://localhost/SDE/seccionComentarios/consultaComentario.php">Seccion de preguntas</a></li>  
-				<li class="link"><a href="#">Sobre Nosotros</a></li>  
-				<li class="link"><a href="#">Miembros</a></li>
-				<li class="link"><a href="C:/xampp/htdocs/Proyecto final con php/Formulario-de-Registro/index.html">Registro</a></li>     
-				<li class="link"><a href="../Formularios-main-main/Formulario-de-Login/index.html">Inicio</a></li>
+				<li class="link"><a href="../misionVision/index.php">Sobre Nosotros</a></li>  
+				<li class="link"><a href="../formularios_con_php/Formulario_de_Registro/index.php">Registro</a></li>     
+				<li class="link"><a href="../formularios_con_php/Formulario_de_Login/index.php">Inicio</a></li>
+                <li class="link"><a href="../maquetacion_Juan_Pablo/index.php">Especialistas</a></li>
+                <li class="link"><a href="http://localhost/SDE/Miembros\index.php">Miembros</a></li>
+				<li class="link"><a href="../Pagina_inicial_2/index.php">Pagina inicial</a></li>
 			</ul>   
-	</header>
+    </header>
 	<header class="headerResponsive">
         <div class="contenedorImg">
             <img src="../Pagina inicial 2.0/imagenes/logo.png" alt="">

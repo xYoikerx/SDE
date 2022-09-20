@@ -12,8 +12,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/cabezera.css">
 </head>
 <body>
+    <header class="contenedorX">
+		<div class="contenedorImg">
+			<img src="../Pagina_inicial_2/imagenes/logo.png" alt="">
+		</div>
+			<ul class="contenedorLinks">
+				<li class="link"><a href="http://localhost/SDE/seccionComentarios/consultaComentario.php">Seccion de preguntas</a></li>  
+				<li class="link"><a href="../misionVision/index.php">Sobre Nosotros</a></li>  
+				<li class="link"><a href="../formularios_con_php/Formulario_de_Registro/index.php">Registro</a></li>     
+				<li class="link"><a href="../formularios_con_php/Formulario_de_Login/index.php">Inicio</a></li>
+                <li class="link"><a href="../maquetacion_Juan_Pablo/index.php">Especialistas</a></li>
+                <li class="link"><a href="http://localhost/SDE/Miembros\index.php">Miembros</a></li>
+                <li class="link"><a href="../Pagina_inicial_2/index.php">Pagina inicial</a></li>
+			</ul>   
+    </header>
     <div class="contenedor">
         <div class="row">
             <div class="colum s12">
